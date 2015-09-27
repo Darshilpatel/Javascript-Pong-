@@ -38,6 +38,14 @@ function calculateMousePos(evt) {
 		y:mouseY
 	};
 }
+
+function handleMouseClick(evt) {
+	if(showingWinScreen) {
+		player1Score = 0;
+		player2Score = 0;
+		showingWinScreen = false;
+	}
+}
 </script>
 
 </body>
