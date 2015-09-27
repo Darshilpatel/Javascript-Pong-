@@ -66,6 +66,19 @@ window.onload = function() {
 		});
 }
 
+function ballReset() {
+	if(player1Score >= WINNING_SCORE ||
+		player2Score >= WINNING_SCORE) {
+
+		showingWinScreen = true;
+
+	}
+
+	ballSpeedX = -ballSpeedX;
+	ballX = canvas.width/2;
+	ballY = canvas.height/2;
+}
+
 
 </script>
 
